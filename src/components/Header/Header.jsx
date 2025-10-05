@@ -1,3 +1,4 @@
+import { Link } from 'react-router-dom'
 import "./Header.scss";
 import picture from "../../assets/dani.png";
 const Header = () => {
@@ -8,9 +9,9 @@ const Header = () => {
         <h1 className="username">Daniela Guzman Avila</h1>
       </div>
       <nav className="nav">
-        <a href="#about"> About me </a>
-        <a href="#projects">Projects</a>
-        <a href="#contact">Contacts</a>
+        <Link to="../About/About.jsx"> About me </Link>
+        <Link to="../Projectss/Projects.jsx">Projects</Link>
+        <Link to="../Contact/Contact.jsx">Contacts</Link>
       </nav>
     </header>
   );

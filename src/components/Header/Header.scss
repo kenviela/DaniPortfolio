@@ -8,6 +8,7 @@
   background-color: $color-primary; // ejemplo: #071952
   color: $color-text;
   box-shadow: 0 2px 10px rgba(0, 0, 0, 0.2);
+  background: linear-gradient(90deg, $color-primary-dark 40%, $color-primary 60%);
   h1 {
     color: $color-text;
   }
