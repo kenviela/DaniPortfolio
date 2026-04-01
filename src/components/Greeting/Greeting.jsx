@@ -1,5 +1,12 @@
+import { Link } from "react-router-dom";
 import "./Greeting.scss";
 const Greeting = () => {
+  //función para redireccionar a los proyectos
+  const goToProjects = () => {
+    document.getElementById("projects").scrollIntoView({
+      behavior: "smooth",
+    });
+  };
   return (
     <section className="Greeting" id="home">
       <img
@@ -8,13 +15,17 @@ const Greeting = () => {
       />
       <div className="greeting-content">
         <h2>
-          Hi!<br/> I'm <span>Daniela Guzman</span>
+          Hi!
+          <br /> I'm <span>Daniela Guzman</span>
         </h2>
         <p>
           Passionate web developer focused on crafting functional and inspiring
           digital experiences.
         </p>
-        <button className="btn-primary">Ver proyectos</button>
+
+        <button onClick={goToProjects} className="btn-primary">
+          My projects
+        </button>
       </div>
     </section>
   );

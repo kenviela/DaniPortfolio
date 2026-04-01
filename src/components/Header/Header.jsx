@@ -22,9 +22,9 @@ const Header = () => {
         <Link to="../About/About.jsx" onClick={() => setMenuOpen(false)}>
           About me
         </Link>
-        <Link to="../Projectss/Projects.jsx" onClick={() => setMenuOpen(false)}>
+        <a href="#projects" onClick={() => setMenuOpen(false)}>
           Projects
-        </Link>
+        </a>
         <Link to="../Contact/Contact.jsx" onClick={() => setMenuOpen(false)}>
           Contact
         </Link>
